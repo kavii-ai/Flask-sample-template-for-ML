@@ -57,11 +57,12 @@ button[type="submit"] {
 }
 
 #search-container {
-    margin-top: 5px;
+    margin-top: 2px;
     display: flex;
     flex-direction: column; /* Place search bar in a column layout */
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
+    
 }
 
 .search-input {
@@ -90,9 +91,11 @@ button[type="submit"] {
 }
 
 #medical-icon {
-    max-width: 200px; /* Set a maximum width in pixels */
-    max-height: 200px; /* Set a maximum height in pixels */
+    max-width: 300px; /* Set a maximum width in pixels */
+    max-height: 300px; /* Set a maximum height in pixels */
     border-radius: 20%; /* Make it circular (assuming it's a circular icon) */
     margin-bottom: 1em; /* Add space below the image */
+    /* Padding-top: 30px ; */
+    margin-top: 110px
 }
 

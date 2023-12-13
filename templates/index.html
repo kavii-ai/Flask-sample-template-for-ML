@@ -142,7 +142,21 @@
 <h3 class="benefit"> + Search for medicines</h3>
 <h3 class="benefit"> + Get information about medicines</h3>
 <h3 class="benefit"> + Talk to our chatbot</h3>
-
+        <div id="search-container">
+            <form action="{{ url_for('search') }}" method="post">
+                <h2>Search for medicines</h2>
+                <div class="search-input">
+                    <input type="text" name="search_query" placeholder="Enter medicine name">
+                    <br>
+                    <br>
+                    <div>
+                        <button type="submit" id="search">Search</button>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </form>
+        </div>
         <h1 >
             <a href="{{ url_for('chat') }}" class="button">Click here to talk to our chatbot</a>
         </h1>
@@ -184,21 +198,7 @@
                 }
             }
         </script>
-        <div id="search-container">
-            <form action="{{ url_for('search') }}" method="post">
-                <h2>Search for medicines</h2>
-                <div class="search-input">
-                    <input type="text" name="search_query" placeholder="Enter medicine name">
-                    <br>
-                    <br>
-                    <div>
-                        <button type="submit" id="search">Search</button>
-                    </div>
-                    <br>
-                    <br>
-                </div>
-            </form>
-        </div>
+        
     </div>
     <h2>{{ prediction_text }}</h2>
 </body>
